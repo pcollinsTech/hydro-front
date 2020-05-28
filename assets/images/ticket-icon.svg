@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>ticket - FontAwesome</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="FontAwesome" font-size="20" font-weight="normal">
+        <g id="Header" transform="translate(-810.000000, -18.000000)" fill="#FFFFFF">
+            <g id="Header-Top">
+                <g id="Group" transform="translate(810.000000, 9.000000)">
+                    <g id="Group-2" transform="translate(0.000000, 9.000000)">
+                        <text id="ticket---FontAwesome">
+                            <tspan x="0" y="17"></tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Icon material-person-outline</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header" transform="translate(-1435.000000, -18.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Header-Top">
+                <g id="Group" transform="translate(810.000000, 9.000000)">
+                    <g id="Icon-material-person-outline" transform="translate(625.000000, 9.000000)">
+                        <path d="M9.5,2 C10.8807119,2 12,3.11928813 12,4.5 C12,5.88071187 10.8807119,7 9.5,7 C8.11928813,7 7,5.88071187 7,4.5 C7,3.11928813 8.11928813,2 9.5,2 M9,12 C12.4081967,12 16,13.825 16,14.625 L16,16 L2,16 L2,14.625 C2,13.825 5.59180328,12 9,12 M9.5,0 C7.01471863,0 5,2.01471863 5,4.5 C5,6.98528137 7.01471863,9 9.5,9 C11.9852814,9 14,6.98528137 14,4.5 C14,3.3065258 13.5258942,2.16193319 12.6819805,1.31801948 C11.8380668,0.474105782 10.6934742,0 9.5,0 Z M9,10 C5.99625,10 0,11.5314286 0,14.5714286 L0,18 L18,18 L18,14.5714286 C18,11.5314286 12.00375,10 9,10 Z" id="Icon_material-person-outline"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

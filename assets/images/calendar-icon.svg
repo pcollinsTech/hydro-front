@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Calendar - simple-line-icons</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="simple-line-icons" font-size="16" font-weight="normal">
+        <g id="Header" transform="translate(-1406.000000, -114.000000)" fill="#FFFFFF">
+            <g id="Header-Main" transform="translate(641.000000, 104.000000)">
+                <text id="Calendar---simple-line-icons">
+                    <tspan x="765" y="25"></tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

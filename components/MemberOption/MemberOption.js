@@ -8,7 +8,7 @@ const MemberOption = () => {
       <div className="member-option">
         <div className="container">
           <div className="row">
-            <div className="col-5">
+            <div className="col-7">
               <div className="section-title text-left">
                 <h2>
                   <b>GET YOUR HYDRO PASS TODAY</b>

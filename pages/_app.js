@@ -1,6 +1,6 @@
 import React from "react";
 import App from "next/app";
-
+import getConfig from "next/config";
 import "../assets/sass/app.scss";
 import "react-datepicker/dist/react-datepicker.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -32,3 +32,5 @@ export default class MyApp extends App {
     );
   }
 }
+
+// const { publicRuntimeConfig } = getConfig();

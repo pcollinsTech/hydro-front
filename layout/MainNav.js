@@ -16,10 +16,49 @@ import { GiTicket } from "react-icons/gi";
 import MobileMenu from "./MobileMenu";
 import userIcon from "../assets/images/user-icon.svg";
 import calenderIcon from "../assets/images/calendar-icon.svg";
+import Dropdown from "./Dropdown/Dropdown";
 
+const icon = () => <FaMapSigns size={30} color="white" />;
+const playItems = [
+  {
+    activity: "Aqua Park",
+    slug: "aqua-park",
+  },
+  {
+    activity: "Hydro Climb",
+    slug: "hydro-climb",
+  },
+  {
+    activity: "Wakeboard & Kneeboard",
+    slug: "wakeboard-kneeboard",
+  },
+  {
+    activity: "Tubing",
+    slug: "tubing",
+  },
+  {
+    activity: "Aqua Rugby",
+    slug: "aqua-rugby",
+  },
+  {
+    activity: "Open Water Swim",
+    slug: "open-water-swim",
+  },
+  {
+    activity: "BBQ Pods",
+    slug: "bbq-pods",
+  },
+  {
+    activity: "Stand Up Paddle Boarding",
+    slug: "stand-up-paddle-boarding",
+  },
+  {
+    activity: "Kayaking",
+    slug: "kayaking",
+  },
+];
 const MainNav = ({ setMenuShow }) => {
   const router = useRouter();
-  console.log("ROUTER", router);
   return (
     <div>
       <div className="top-nav">
@@ -105,76 +144,16 @@ const MainNav = ({ setMenuShow }) => {
                     </a>
                   </Link>
                 </NavItem>
-                <NavDropdown title="Play" id="basic-nav-dropdown">
-                  <div className="container nav-play">
-                    <div className="row">
-                      <div className="col-1">
-                        <FaMapSigns size={30} color="white" />
-                      </div>
-                      <div className="col-3">
-                        <h3>Play</h3>
-                      </div>
-                      <div className="col-4">
-                        <p>Action Packed Fun</p>
-                      </div>
-                      <div className="col-3">
-                        <button
-                          type="button"
-                          className="btn btn-primary btn-sm"
-                        >
-                          Book Now
-                        </button>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col">
-                        <Link href="/">
-                          <a>Aqua Park</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Hydro Climb</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Waterboard & Kneeboard</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Tubing</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Puddle Park</a>
-                        </Link>
-                      </div>
-                      <div className="col">
-                        <Link href="/">
-                          <a>Aqua Rugby</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Open Water Swim</a>
-                        </Link>
-                        <Link href="/">
-                          <a>BBQ Pods</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Stand Up Paddle Boarding</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Kayaking</a>
-                        </Link>
-                      </div>
-                      <div className="col">
-                        <h4>Group Package?</h4>
-                        <h4>Birthday Party?</h4>
-                        <p>Fill in this enquiry form</p>
-                        <button
-                          type="button"
-                          className="btn btn-primary btn-sm"
-                        >
-                          Enquiry Form
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </NavDropdown>
+                <Dropdown
+                  title="Play"
+                  subTitle="Action Pack Fun"
+                  items={playItems}
+                />
+                <Dropdown
+                  title="Stay"
+                  subTitle="Relax & Unwind"
+                  items={playItems}
+                />
 
                 <NavDropdown title="Stay" id="basic-nav-dropdown">
                   <div className="container nav-stay">

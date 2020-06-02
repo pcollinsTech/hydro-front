@@ -1,10 +1,10 @@
-import aquaPark from "../../assets/images/activities/aquaPark.png";
-import hydroClimb from "../../assets/images/activities/hydroClimb.png";
-import wakeboard from "../../assets/images/activities/wakeboard.png";
-import tubing from "../../assets/images/activities/tubing.png";
-import puddlePark from "../../assets/images/activities/puddlePark.png";
-import aquaRugby from "../../assets/images/activities/aquaRugby.png";
-import aquaBanner from "../../assets/images/activities/banners/aquaBanner.png";
+import aquaPark from "../images/activities/aquaPark.png";
+import hydroClimb from "../images/activities/hydroClimb.png";
+import wakeboard from "../images/activities/wakeboard.png";
+import tubing from "../images/activities/tubing.png";
+import puddlePark from "../images/activities/puddlePark.png";
+import aquaRugby from "../images/activities/aquaRugby.png";
+import aquaBanner from "../images/activities/banners/aquaBanner.png";
 
 const activitiesData = [
   {

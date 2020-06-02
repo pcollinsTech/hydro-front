@@ -93,7 +93,7 @@
     }
   }
   .nav-play {
-    width: 50vw;
+    width: 100vw;
     background-color: rgb(0, 40, 79);
     margin-top: -10px;
     margin-bottom: -10px;
@@ -103,6 +103,8 @@
     padding-right: 60px;
     border-radius: 5px 5px 5px 5px;
     position: absolute;
+    left: 0;
+    z-index: 100;
 
     h4 {
       color: white;

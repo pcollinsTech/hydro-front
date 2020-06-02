@@ -6,17 +6,17 @@ import MemberOption from "../../components/MemberOption";
 import ReviewText from "../../components/ReviewText";
 import ImageCarousel from "../../components/ImageCarousel";
 import BookNow from "../../components/BookNow";
-import banner from "../../assets/images/banners/play.png";
-import activitiesData from "./data";
+import banner from "../../assets/images/banners/stay.png";
+import staysData from "../../assets/data/stay";
 
-const Play = (props) => {
+const Stay = (props) => {
   return (
     <>
       <Head>
-        <title>Lets Go Hydro || Play</title>
+        <title>Lets Go Hydro || Stay</title>
       </Head>
       <Banner
-        title="Play"
+        title="Stay"
         subTitle="Let the action await..."
         bannerImage={banner}
       />
@@ -32,7 +32,7 @@ const Play = (props) => {
 };
 
 export const getStaticProps = async () => {
-  const files = activitiesData.map((activity) => activity.slug);
+  const files = staysData.map((activity) => activity.slug);
   console.log("FILES", files);
   const paths = files.map((slug) => ({
     slug,
@@ -42,4 +42,4 @@ export const getStaticProps = async () => {
     props: { paths },
   };
 };
-export default Play;
+export default Stay;

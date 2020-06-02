@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import activitiesData from "./data";
+import activitiesData from "../../assets/data/play";
 import Banner from "../../components/Banner";
 
 const Activity = ({

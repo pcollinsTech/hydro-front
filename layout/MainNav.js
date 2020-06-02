@@ -1,22 +1,18 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { NavDropdown, Navbar, Container, Nav, NavItem } from "react-bootstrap";
-import logo from "../assets/images/hydro-logo.jpeg";
+import logo from "../assets/images/hydro-logo.png";
 import {
   FaRegCalendarAlt,
-  FaRegClock,
   FaBars,
   FaWindowClose,
   FaMapSigns,
-  FaHome,
 } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
-import { GiTicket } from "react-icons/gi";
 import MobileMenu from "./MobileMenu";
-import userIcon from "../assets/images/user-icon.svg";
-import calenderIcon from "../assets/images/calendar-icon.svg";
+import { NavDropdown, Navbar, Container, Nav, NavItem } from "react-bootstrap";
 import Dropdown from "./Dropdown/Dropdown";
+import TopNav from "./TopNav";
 
 const icon = () => <FaMapSigns size={30} color="white" />;
 const playItems = [
@@ -61,64 +57,15 @@ const MainNav = ({ setMenuShow }) => {
   const router = useRouter();
   return (
     <div>
-      <div className="top-nav">
-        <div className="container">
-          <div className="row">
-            <div className="col-3 opening">
-              <h6>
-                <FaRegClock size={17} /> &nbsp; Open Today: 9:00am - 6:00pm
-              </h6>
-            </div>
-            <div className="col-6 d-flex justify-content-between">
-              <Link href="/">
-                <a>
-                  <GiTicket size={17} /> Gift Vouchers
-                </a>
-              </Link>
-
-              <Link href="/">
-                <a>Jobs</a>
-              </Link>
-
-              <Link href="/">
-                <a>Memberships</a>
-              </Link>
-
-              <Link href="/">
-                <a>Contact</a>
-              </Link>
-
-              <Link href="/">
-                <a>Help & Rules</a>
-              </Link>
-            </div>
-            <div className="col-1 d-flex justify-content-between">
-              <div className="top-user-icon">
-                <Link href="/">
-                  <a>
-                    <img src={userIcon} alt="usericon" />
-                  </a>
-                </Link>
-              </div>
-              <div className="top-basket-icon">
-                <Link href="/">
-                  <a>
-                    <FiShoppingCart size={22} />
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <TopNav />
       <div className="main-nav">
         <div className="container">
           <Navbar
             sticky="top-fixed"
             id="navbar"
-            className="navbar navbar-expand-lg "
+            className="navbar navbar-expand-lg"
           >
-            <Container className="d-flex justify-content-start">
+            <Container className="d-flex justify-content-between">
               <Navbar.Brand>
                 <Link href="/">
                   <a>
@@ -155,76 +102,6 @@ const MainNav = ({ setMenuShow }) => {
                   items={playItems}
                 />
 
-                <NavDropdown title="Stay" id="basic-nav-dropdown">
-                  <div className="container nav-stay">
-                    <div className="row">
-                      <div className="col-1">
-                        <FaHome size={30} color="white" />
-                      </div>
-                      <div className="col-3">
-                        <h3>Stay</h3>
-                      </div>
-                      <div className="col-4">
-                        <p>Relax & Unwind</p>
-                      </div>
-                      <div className="col-3">
-                        <button
-                          type="button"
-                          className="btn btn-primary btn-sm"
-                        >
-                          Book Now
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className="row">
-                      <div className="col">
-                        <Link href="/">
-                          <a>Glamping Pods</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Safari Lodges</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Lake Pod</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Houseboat</a>
-                        </Link>
-                        <Link href="/">
-                          <a>IgluHut</a>
-                        </Link>
-                      </div>
-                      <div className="col">
-                        <Link href="/">
-                          <a>Forest Domes</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Luxury Glamping Pods</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Meadow Pods</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Hedge Village Pods</a>
-                        </Link>
-                        <Link href="/">
-                          <a>Tree Garden Pods</a>
-                        </Link>
-                      </div>
-                      <div className="col">
-                        <h4>Special Enquiry?</h4>
-                        <p>Fill in this enquiry form</p>
-                        <button
-                          type="button"
-                          className="btn btn-primary btn-sm"
-                        >
-                          Enquiry Form
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </NavDropdown>
                 <NavDropdown title="Explore" id="basic-nav-dropdown">
                   <div className="nav-explore">
                     <NavDropdown.Item href="/">Towpath</NavDropdown.Item>

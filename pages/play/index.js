@@ -7,7 +7,7 @@ import ReviewText from "../../components/ReviewText";
 import ImageCarousel from "../../components/ImageCarousel";
 import BookNow from "../../components/BookNow";
 import banner from "../../assets/images/banners/play.png";
-import activitiesData from "./data";
+import activitiesData from "../../assets/data/play";
 
 const Play = (props) => {
   return (

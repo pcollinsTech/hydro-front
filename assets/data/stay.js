@@ -1,10 +1,10 @@
-import glamping from "../../assets/images/stay/glamping.png";
-import safari from "../../assets/images/stay/safari.png";
-import lakePod from "../../assets/images/stay/lakePod.png";
-import houseBoat from "../../assets/images/stay/houseBoat.png";
-import igluHut from "../../assets/images/stay/igluHut.png";
-import forestDome from "../../assets/images/stay/forestDome.png";
-import aquaBanner from "../../assets/images/stay/banners/aquaBanner.png";
+import glamping from "../../assets/images/stays/glamping.png";
+import safari from "../../assets/images/stays/safari.png";
+import lakePod from "../../assets/images/stays/lakePod.png";
+import houseBoat from "../../assets/images/stays/houseBoat.png";
+import igluHut from "../../assets/images/stays/igluHut.png";
+import forestDome from "../../assets/images/stays/forestDome.png";
+import aquaBanner from "../../assets/images/activities/banners/aquaBanner.png";
 
 const staysData = [
   {

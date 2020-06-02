@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import { FaMapSigns, FaRegCalendarAlt } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
+import splash from "../../../assets/images/splash-graphic-1.png";
 import DatePicker from "react-datepicker";
 import QuantitySelector from "../../QuantitySelector/QuantitySelector";
 const Form = () => {
@@ -80,6 +81,10 @@ const Form = () => {
             Check Availability
           </button>
         </div>
+      </div>
+      <div className="splash-banner">
+        {" "}
+        <img src={splash} alt="splash" />{" "}
       </div>
     </div>
   );

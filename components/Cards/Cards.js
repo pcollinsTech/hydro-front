@@ -4,24 +4,23 @@ import splash from "../../assets/images/splash-graphic-2.png";
 import Card from "./Card";
 import { FaMapSigns, FaHome } from "react-icons/fa";
 import { FiMap } from "react-icons/fi";
-import styles from "./service.module.scss";
 
-const data = [
+const serviceData = [
   {
     id: 1,
     icon: <FaMapSigns size={35} />,
     title: "Play",
     description: "play",
-    slug: "#",
-    img: welcome1,
+    slug: "play",
+    featuredImage: welcome1,
   },
   {
     id: 2,
     icon: <FaHome size={35} />,
     title: "Stay",
     description: "stay",
-    slug: "/stay",
-    img: welcome1,
+    slug: "stay",
+    featuredImage: welcome1,
   },
   {
     id: 3,
@@ -29,7 +28,7 @@ const data = [
     title: "Explore",
     description: "explore",
     slug: "#",
-    img: welcome1,
+    featuredImage: welcome1,
   },
   {
     id: 4,
@@ -37,7 +36,7 @@ const data = [
     title: "Events",
     description: "events",
     slug: "#",
-    img: welcome1,
+    featuredImage: welcome1,
   },
   {
     id: 5,
@@ -45,7 +44,7 @@ const data = [
     title: "Groups",
     description: "groups",
     slug: "#",
-    img: welcome1,
+    featuredImage: welcome1,
   },
   {
     id: 6,
@@ -53,14 +52,27 @@ const data = [
     title: "Memberships",
     description: "membership",
     slug: "#",
-    img: welcome1,
+    featuredImage: welcome1,
   },
 ];
 
-const Services = () => {
+const Cards = ({ data }) => {
+  const renderCards = () => {
+    if (data) {
+      console.log("DATA", data);
+      return data.map((activity) => (
+        <Card key={activity.id} data={activity} type="home" />
+      ));
+    } else {
+      return serviceData.map((activity) => (
+        <Card key={activity.id} data={activity} type="home" />
+      ));
+    }
+  };
+
   return (
     <React.Fragment>
-      <section className={styles.services_area}>
+      <section className="cards_area">
         <div className="splash-service">
           {" "}
           <img src={splash} alt="splash" />{" "}
@@ -76,15 +88,11 @@ const Services = () => {
           </div>
         </div>
         <div className="container">
-          <div className="row">
-            {data.map((activity) => (
-              <Card key={activity.id} data={activity} type="home" />
-            ))}
-          </div>
+          <div className="row">{renderCards()}</div>
         </div>
       </section>
     </React.Fragment>
   );
 };
 
-export default Services;
+export default Cards;

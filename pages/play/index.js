@@ -20,7 +20,7 @@ const Play = (props) => {
         subTitle="Let the action await..."
         bannerImage={banner}
       />
-      <Cards />
+      <Cards data={activitiesData} />
       <br />
       <MemberOption />
       <ReviewText />

@@ -20,7 +20,7 @@ const Stay = (props) => {
         subTitle="Let the action await..."
         bannerImage={banner}
       />
-      <Cards />
+      <Cards data={staysData} />
       <br />
       <MemberOption />
       <ReviewText />

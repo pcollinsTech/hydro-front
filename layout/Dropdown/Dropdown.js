@@ -8,6 +8,56 @@ const Dropdown = ({ items, title, subTitle }) => {
 
   const display = open ? "inline-block !important" : "none !important";
 
+  const list = () => {
+    if (items.length > 6) {
+      var first = items.slice(0, 5);
+      var second = items.slice(5 + 1);
+      return (
+        <>
+          <div className="col ">
+            {first.map((item) => (
+              <DropdownItem
+                setOpen={setOpen}
+                key={item.slug}
+                item={item}
+                title={title}
+                setOpen={setOpen}
+                open={open}
+              />
+            ))}
+          </div>
+          <div className="col ">
+            {second.map((item) => (
+              <DropdownItem
+                setOpen={setOpen}
+                key={item.slug}
+                item={item}
+                title={title}
+                setOpen={setOpen}
+                open={open}
+              />
+            ))}
+          </div>
+        </>
+      );
+    } else {
+      return (
+        <div className="col ">
+          {items.map((item) => (
+            <DropdownItem
+              setOpen={setOpen}
+              key={item.slug}
+              item={item}
+              title={title}
+              setOpen={setOpen}
+              open={open}
+            />
+          ))}
+        </div>
+      );
+    }
+  };
+
   return (
     <div className="" onClick={() => setOpen(!open)}>
       <a
@@ -50,20 +100,7 @@ const Dropdown = ({ items, title, subTitle }) => {
                 </div>
               </div>
               <div className="row">
-                <div className="col d-flex flex-column">
-                  {items.map((item) => {
-                    return (
-                      <DropdownItem
-                        setOpen={setOpen}
-                        key={item.slug}
-                        item={item}
-                        title={title}
-                        setOpen={setOpen}
-                        open={open}
-                      />
-                    );
-                  })}
-                </div>
+                {list()}
                 <div className="col">
                   <h4>Group Package?</h4>
                   <h4>Birthday Party?</h4>

@@ -105,7 +105,9 @@
     position: absolute;
     left: 0;
     z-index: 100;
-
+    .container {
+      display: block !important;
+    }
     h4 {
       color: white;
     }

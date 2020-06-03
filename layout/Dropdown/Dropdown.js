@@ -20,8 +20,8 @@ const Dropdown = ({ items, title, subTitle }) => {
       {open && (
         <OutsideAlerter open={open} trigger={setOpen}>
           <div className="nav-play" style={{ display: display }}>
-            <div className="container flex-column text-left">
-              <div className="row">
+            <div className="container">
+              <div className="row my-4">
                 <div className="col-1">
                   {title === "Play" ? (
                     <FaMapSigns size={30} color="white" />
@@ -29,17 +29,17 @@ const Dropdown = ({ items, title, subTitle }) => {
                     <FaHome size={30} color="white" />
                   )}
                 </div>
-                <div className="col-3">
+                <div className="col-2">
                   <Link href={title.toLowerCase()}>
                     <a>
                       <h3>{title}</h3>
                     </a>
                   </Link>
                 </div>
-                <div className="col-4">
+                <div className="col-2">
                   <p>{subTitle}</p>
                 </div>
-                <div className="col-3">
+                <div className="col-1">
                   <Link href={title.toLowerCase()}>
                     <a>
                       <button type="button" className="btn btn-primary btn-sm">

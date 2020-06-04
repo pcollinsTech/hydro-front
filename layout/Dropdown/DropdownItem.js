@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
-const DropdownItem = ({ item: { activity, slug }, title, setOpen, open }) => {
+const DropdownItem = ({ item, title, setOpen, open }) => {
   return (
     <div onClick={() => setOpen(!open)}>
       <Link
-        as={`/${title.toLowerCase()}/${slug}`}
+        as={`/${title.toLowerCase()}/${item.slug}`}
         href={`/${title.toLowerCase()}/[slug]`}
       >
-        <a>{activity}</a>
+        <a>{item.title}</a>
       </Link>
     </div>
   );

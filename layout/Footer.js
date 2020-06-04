@@ -3,8 +3,12 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 import moment from "moment";
 import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
+import { ListLink } from "../common";
 import logo from "../assets/images/hydro-logo-blue.png";
-
+import Accordian from "../components/Accordian";
+import activitiesData from "../assets/data/play";
+import staysData from "../assets/data/stay";
+import { Subscribe } from "../components";
 const Footer = () => {
   return (
     <React.Fragment>
@@ -31,22 +35,7 @@ const Footer = () => {
           */}
 
             <div className="col-sm-4 footer-newsletter">
-              <h4>
-                <b>SIGN-UP FOR NEWSLETTER</b>
-              </h4>
-
-              <div className="col">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  defaultValue=""
-                  placeholder="hello@letsgohydro.com"
-                />
-                <button type="button" className="btn btn-primary btn-sm">
-                  Send
-                </button>
-              </div>
+              <Subscribe />
             </div>
 
             <div className="container">
@@ -86,121 +75,17 @@ const Footer = () => {
                 <div className="col-sm-3">
                   <h4>Play</h4>
                   <ul>
-                    <li>
-                      <Link href="/">
-                        <a>Aqua Park</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Hydro Climb</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Waterboard & Kneeboard</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Tubing</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Puddle Park</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Aqua Rugby</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Open Water Swim</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>BBQ Pods</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Stand Up Paddle Boarding</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Kayaking</a>
-                      </Link>
-                    </li>
+                    {activitiesData.map((item) => (
+                      <ListLink item={item} />
+                    ))}
                   </ul>
                 </div>
                 <div className="col-sm-3">
                   <h4>Stay</h4>
                   <ul>
-                    <li>
-                      <Link href="/">
-                        <a>Glamping Pods</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Safari Lodges</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Lake Pod</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Houseboat</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>IgluHut</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Forest Domes</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Luxury Glamping Pods</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Meadow Pods</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Hedge Village Pods</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Tree Garden Pods</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Caravan Park</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Tents</a>
-                      </Link>
-                    </li>
+                    {staysData.map((item) => (
+                      <ListLink item={item} />
+                    ))}
                   </ul>
                 </div>
                 <div className="col-sm-3">

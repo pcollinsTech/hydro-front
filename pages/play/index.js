@@ -1,11 +1,13 @@
 import React from "react";
 import Head from "next/head";
-import Banner from "../../components/Banner/Banner";
-import Cards from "../../components/Cards";
-import MemberOption from "../../components/MemberOption";
-import ReviewText from "../../components/ReviewText";
-import ImageCarousel from "../../components/ImageCarousel";
-import BookNow from "../../components/BookNow";
+import {
+  Banner,
+  Cards,
+  MemberOption,
+  ReviewText,
+  ImageCarousel,
+  BookNow,
+} from "../../components";
 import banner from "../../assets/images/banners/play.png";
 import activitiesData from "../../assets/data/play";
 

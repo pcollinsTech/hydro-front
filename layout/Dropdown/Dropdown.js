@@ -42,18 +42,21 @@ const Dropdown = ({ items, title, subTitle }) => {
       );
     } else {
       return (
-        <div className="col ">
-          {items.map((item) => (
-            <DropdownItem
-              setOpen={setOpen}
-              key={item.slug}
-              item={item}
-              title={title}
-              setOpen={setOpen}
-              open={open}
-            />
-          ))}
-        </div>
+        <>
+          <div className="col ">
+            {items.map((item) => (
+              <DropdownItem
+                setOpen={setOpen}
+                key={item.slug}
+                item={item}
+                title={title}
+                setOpen={setOpen}
+                open={open}
+              />
+            ))}
+          </div>
+          <div className="col"></div>
+        </>
       );
     }
   };

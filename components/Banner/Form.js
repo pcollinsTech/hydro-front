@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { FaMapSigns, FaRegCalendarAlt } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
-import splash from "../../../assets/images/splash-graphic-1.png";
+import splash from "../../assets/images/splash-graphic-1.png";
 import DatePicker from "react-datepicker";
-import QuantitySelector from "../../QuantitySelector/QuantitySelector";
+import QuantitySelector from "../QuantitySelector/QuantitySelector";
 const Form = () => {
   const [type, setType] = useState("play");
   const [startDate, setStartDate] = useState(new Date());

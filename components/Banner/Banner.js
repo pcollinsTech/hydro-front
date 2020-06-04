@@ -18,11 +18,11 @@ const Banner = ({ bannerImage, title, subTitle }) => {
           {" "}
           <img src={splash1} alt="splash" />{" "}
         </div>
-        
+
         <div className="banner-title">
           <div className="container">
             <div className="row d-flex justify-content-between">
-              <div className="col-7">
+              <div className="col-sm-7">
                 <h1 dangerouslySetInnerHTML={{ __html: title }} />
 
                 <h4 dangerouslySetInnerHTML={{ __html: subTitle }} />
@@ -38,7 +38,9 @@ const Banner = ({ bannerImage, title, subTitle }) => {
                   </button>
                 </div>
               </div>
-              <Form />
+              <div className="col-sm-5">
+                <Form />
+              </div>
             </div>
           </div>
         </div>

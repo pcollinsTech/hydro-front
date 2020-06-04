@@ -10,9 +10,12 @@
 
 @import "layout/header";
 @import "layout/main_nav";
+@import "layout/layout";
 
 // components
 @import "components/postItem";
+@import "components/banner";
+@import "components/member_option";
 @import "components/cards";
 
 @import "hydro_popup";

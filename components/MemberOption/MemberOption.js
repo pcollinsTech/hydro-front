@@ -6,7 +6,7 @@ const MemberOption = () => {
   return (
     <React.Fragment>
       <div className="member-option">
-        <div className="container">
+        <div className="container mt-5">
           <div className="row">
             <div className="col-7">
               <div className="section-title text-left">

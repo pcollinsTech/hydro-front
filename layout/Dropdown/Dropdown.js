@@ -62,7 +62,7 @@ const Dropdown = ({ items, title, subTitle }) => {
   };
 
   return (
-    <div className="" onClick={() => setOpen(!open)}>
+    <div className="nav-item" onClick={() => setOpen(!open)}>
       <a
         id="basic-nav-dropdown"
         className="dropdown-toggle nav-link"
@@ -83,7 +83,7 @@ const Dropdown = ({ items, title, subTitle }) => {
                   )}
                 </div>
                 <div className="col-2">
-                  <Link href={title.toLowerCase()}>
+                  <Link href={`/${title.toLowerCase()}`}>
                     <a>
                       <h3>{title}</h3>
                     </a>

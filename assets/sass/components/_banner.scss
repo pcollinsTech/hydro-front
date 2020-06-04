@@ -1,0 +1,154 @@
+.banner {
+  height: 80vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  .splash-banner {
+    position: absolute;
+    right: 0px;
+    bottom: -110px;
+    width: 300px;
+    z-index: 0;
+  }
+  .splash-header {
+    position: absolute;
+    width: 30vw;
+    right: 0px;
+
+    bottom: -100px;
+    z-index: 1;
+  }
+  h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bolder;
+  }
+  h4 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  h5 {
+    color: rgb(161, 157, 157);
+  }
+
+  .btn-primary {
+    background-color: transparent;
+    border: none;
+    font-size: 0.95rem;
+  }
+  .btn-primary:hover {
+    background-color: transparent;
+  }
+  .btn-secondary {
+    background-color: rgb(8, 40, 110);
+    border-color: rgb(8, 40, 110);
+    height: 42px;
+    width: 140px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  .btn-secondary:hover {
+    background-color: rgb(0, 174, 239);
+    border-color: rgb(0, 174, 239);
+  }
+  .banner-title {
+    position: relative;
+    top: 170px;
+    left: 20px;
+  }
+  .availability {
+    width: 315px;
+    background-color: white;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    padding-left: 4px;
+    border-radius: 5%;
+    box-shadow: -1px 2px 4px 0px rgb(163, 162, 162);
+    color: grey;
+    font-size: 18px;
+  }
+
+  .btn-success {
+    background-color: rgb(8, 40, 110);
+    border-color: rgb(8, 40, 110);
+    width: 238px;
+    height: 42px;
+    padding-bottom: 7px;
+    position: relative;
+    right: 6px;
+    z-index: 0;
+  }
+  .btn-success:hover {
+    background-color: rgb(0, 174, 239);
+    border-color: rgb(0, 174, 239);
+  }
+  .controls {
+    font-size: 16px;
+    border-radius: 5px;
+    color: rgb(173, 169, 169);
+    border: solid;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    width: 241px;
+  }
+  .floatLabel {
+    border-radius: 5px 5px 5px 5px;
+    color: rgb(173, 169, 169);
+  }
+  .date-picker {
+    font-size: 16px;
+    color: rgb(136, 136, 136);
+    width: 241px;
+  }
+
+  .floatLabel {
+    border-radius: 5px 5px 5px 5px;
+    width: 204px;
+    color: rgb(173, 169, 169);
+    border: none;
+  }
+  .date-border {
+    border-radius: 5px;
+    color: rgb(173, 169, 169);
+    border: solid;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+  }
+  .datePicker {
+    border: none;
+    width: 205px;
+    color: rgb(173, 169, 169);
+  }
+  input[type="radio"]:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(216, 216, 216);
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+  input[type="radio"]:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(0, 174, 239);
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+}

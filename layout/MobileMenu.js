@@ -30,7 +30,7 @@ const MobileMenu = () => {
                   Book Now
                 </button>{" "}
                 &nbsp;
-                <icon onClick={setMenuShow(!menuShow)}>
+                <icon onClick={() => setMenuShow(!menuShow)}>
                   <FaBars />
                 </icon>
               </div>
@@ -42,7 +42,10 @@ const MobileMenu = () => {
                         <div>
                           <FiShoppingCart size={50} />
                         </div>
-                        <div className="mr-5" onClick={setMenuShow(!menuShow)}>
+                        <div
+                          className="mr-5"
+                          onClick={() => setMenuShow(!menuShow)}
+                        >
                           <FaWindowClose size={50} />
                         </div>
                       </div>

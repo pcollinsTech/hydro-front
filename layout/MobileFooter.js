@@ -7,8 +7,8 @@ import { ListLink } from "../common";
 import logo from "../assets/images/hydro-logo-blue.png";
 import activitiesData from "../assets/data/play";
 import staysData from "../assets/data/stay";
-import { Subscribe } from "../components";
-const Footer = () => {
+import { Subscribe, Accordian } from "../components";
+const MobileFooter = () => {
   return (
     <React.Fragment>
       <footer className="footer-area">
@@ -72,20 +72,10 @@ const Footer = () => {
                   </button>
                 </div>
                 <div className="col-sm-3">
-                  <h4>Play</h4>
-                  <ul>
-                    {activitiesData.map((item, i) => (
-                      <ListLink key={i} item={item} />
-                    ))}
-                  </ul>
+                  <Accordian title="Play" items={activitiesData} />
                 </div>
                 <div className="col-sm-3">
-                  <h4>Stay</h4>
-                  <ul>
-                    {staysData.map((item, i) => (
-                      <ListLink key={i} item={item} />
-                    ))}
-                  </ul>
+                  <Accordian title="Stay" items={staysData} />
                 </div>
                 <div className="col-sm-3">
                   <h4>Explore</h4>
@@ -164,8 +154,8 @@ const Footer = () => {
     </React.Fragment>
   );
 };
-Footer.PropsTypes = {
+MobileFooter.PropsTypes = {
   copyrightText: PropTypes.string,
   footercopyrightText1: PropTypes.string,
 };
-export default Footer;
+export default MobileFooter;

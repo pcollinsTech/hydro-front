@@ -59,7 +59,6 @@ const serviceData = [
 const Cards = ({ data }) => {
   const renderCards = () => {
     if (data) {
-      console.log("DATA", data);
       return data.map((activity) => (
         <Card key={activity.id} data={activity} type="home" />
       ));

@@ -75,7 +75,7 @@ const Footer = () => {
                   <h4>Play</h4>
                   <ul>
                     {activitiesData.map((item, i) => (
-                      <ListLink key={i} item={item} />
+                      <ListLink key={i} item={item} title="Play" />
                     ))}
                   </ul>
                 </div>
@@ -83,7 +83,7 @@ const Footer = () => {
                   <h4>Stay</h4>
                   <ul>
                     {staysData.map((item, i) => (
-                      <ListLink key={i} item={item} />
+                      <ListLink key={i} item={item} title="Stay" />
                     ))}
                   </ul>
                 </div>

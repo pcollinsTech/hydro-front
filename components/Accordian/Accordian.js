@@ -16,7 +16,7 @@ export default function Accordian({ title, items }) {
       <Accordion.Collapse eventKey="0">
         <ul>
           {items.map((item) => (
-            <ListLink item={item} />
+            <ListLink item={item} title={title} />
           ))}
         </ul>
       </Accordion.Collapse>

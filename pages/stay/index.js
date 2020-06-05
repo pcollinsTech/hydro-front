@@ -33,11 +33,9 @@ const Stay = (props) => {
 
 export const getStaticProps = async () => {
   const files = staysData.map((activity) => activity.slug);
-  console.log("FILES", files);
   const paths = files.map((slug) => ({
     slug,
   }));
-  console.log("PATHS", paths);
   return {
     props: { paths },
   };

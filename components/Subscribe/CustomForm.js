@@ -9,7 +9,6 @@ const CustomForm = ({ status, message, onValidated }) => {
       EMAIL: email.value,
     });
 
-  console.log("status", status);
   return (
     <div className="newsletter-form row">
       <div className="col-8">

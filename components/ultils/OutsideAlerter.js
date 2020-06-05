@@ -13,12 +13,10 @@ function useOutsideAlerter(ref, props) {
      */
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
-        console.log("Props", props);
         trigger(!open);
       }
     }
     // Bind the event listener
-    console.log("Props", props);
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       // Unbind the event listener on clean up

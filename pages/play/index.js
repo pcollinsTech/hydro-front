@@ -35,11 +35,9 @@ const Play = (props) => {
 
 export const getStaticProps = async () => {
   const files = activitiesData.map((activity) => activity.slug);
-  console.log("FILES", files);
   const paths = files.map((slug) => ({
     slug,
   }));
-  console.log("PATHS", paths);
   return {
     props: { paths },
   };

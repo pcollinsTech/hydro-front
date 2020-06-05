@@ -10,7 +10,7 @@ const Form = () => {
   const [startDate, setStartDate] = useState(new Date());
   const router = useRouter();
   return (
-    <div className="availability">
+    <div className="availability mx-auto">
       <div className="container">
         <div className="col">
           <div className="title">

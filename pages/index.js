@@ -10,7 +10,6 @@ import banner from "../assets/images/banners/home.png";
 // import activitiesData from "./play/data";
 
 const Index = (props) => {
-  console.log(("PROPS", props));
   return (
     <>
       <Head>
@@ -30,11 +29,9 @@ const Index = (props) => {
 
 // export const getStaticProps = async () => {
 //   const files = activitiesData.map((activity) => activity.slug);
-//   console.log("FILES", files);
 //   const paths = files.map((slug) => ({
 //     slug,
 //   }));
-//   console.log("PATHS", paths);
 //   return {
 //     props: { paths },
 //   };

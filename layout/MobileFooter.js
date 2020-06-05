@@ -8,6 +8,33 @@ import logo from "../assets/images/hydro-logo-blue.png";
 import activitiesData from "../assets/data/play";
 import staysData from "../assets/data/stay";
 import { Subscribe, Accordian } from "../components";
+
+const exploreData = [
+  {
+    id: 1,
+    title: "Towpath",
+    slug: "towpath",
+  },
+  {
+    id: 2,
+    title: "Playpark",
+    slug: "playpark",
+  },
+];
+
+const importantData = [
+  {
+    id: 1,
+    title: "Privacy Policy",
+    slug: "privacy-policy",
+  },
+  {
+    id: 2,
+    title: "Terms & Conditions",
+    slug: "playpark",
+  },
+];
+
 const MobileFooter = () => {
   return (
     <React.Fragment>
@@ -78,19 +105,8 @@ const MobileFooter = () => {
                   <Accordian title="Stay" items={staysData} />
                 </div>
                 <div className="col-sm-3">
-                  <h4>Explore</h4>
-                  <ul>
-                    <li>
-                      <Link href="/">
-                        <a>Towpath</a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/">
-                        <a>Playpark</a>
-                      </Link>
-                    </li>
-                  </ul>
+                  <Accordian title="Explore" items={staysData} />
+
                   <br />
                   <h4>About Us</h4>
                   <ul>
@@ -138,15 +154,17 @@ const MobileFooter = () => {
       </footer>
       <div className="copyright">
         <div className="container">
-          <div className="row">
-            <div className="ml p-1">
-              <p>{`Copyright @ ${moment().format(
+          <div className="row ">
+            <div className="p-1 mx-auto">
+              <p className="text-center">{`Copyright @ ${moment().format(
                 "YYYY"
               )} Let's Go Hydro All rights reserved`}</p>
             </div>
 
-            <div className="ml-auto p-1 created">
-              <p>Created By Big House Creative Web Design Belfast</p>
+            <div className=" p-1 mx-auto">
+              <p className="text-center">
+                Created By Big House Creative Web Design Belfast
+              </p>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import "./service.module.scss";
 export default function Card({ type, activity }) {
   const { icon, img, title, slug, listItems, price, details } = activity;
   return (
-    <div className="col-sm-4 mb-5">
+    <div className="col-md-4 mb-5">
       <div className="services d-flex justify-content-around">
         <div className={styles.service_card}>
           <img src={img} alt="welcome1" />

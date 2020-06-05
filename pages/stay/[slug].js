@@ -52,13 +52,11 @@ const Stay = ({
 
 export const getStaticPaths = async () => {
   const files = staysData.map((stay) => stay.slug);
-  console.log("FILES", files);
   const paths = files.map((slug) => ({
     params: {
       slug,
     },
   }));
-  console.log("PATHS", paths);
   return {
     paths,
     fallback: false,
@@ -66,7 +64,6 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { slug } }) => {
-  console.log("PROPS STAT", slug);
   const stayData = staysData.find((stay) => stay.slug === slug);
   return {
     props: {

@@ -22,7 +22,7 @@ const Banner = ({ bannerImage, title, subTitle }) => {
         <div className="banner-title">
           <div className="container">
             <div className="row d-flex justify-content-between">
-              <div className="col-m-7">
+              <div className="col-md-7">
                 <h1 dangerouslySetInnerHTML={{ __html: title }} />
 
                 <h4 dangerouslySetInnerHTML={{ __html: subTitle }} />
@@ -38,7 +38,7 @@ const Banner = ({ bannerImage, title, subTitle }) => {
                   </button>
                 </div>
               </div>
-              <div className="col-m-5">
+              <div className="col-md-5">
                 <Form />
               </div>
             </div>
